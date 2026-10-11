@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 48" width="516" height="144" role="img" aria-label="VERDURA ARCHITECTS">
+  <title>VERDURA ARCHITECTS</title>
+  <g fill="none" stroke="#1F2A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 33L21 21L39 29"/>
+    <path d="M21 35V15"/>
+    <path d="M3 35H39"/>
+  </g>
+  <path d="M21 15C21 9 25 5 31 4C31 10 27 14 21 15Z" fill="#8FA68A"/>
+  <circle cx="9" cy="10" r="3.2" fill="none" stroke="#9A6B43" stroke-width="1.5"/>
+  <g fill="none" stroke="#1F2A24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 12L56 28L62 12"/>
+    <path d="M78 12H69V28H78M69 20H76"/>
+    <path d="M85 28V12H91A4 4 0 0 1 91 20H85M89 20L95 28"/>
+    <path d="M102 12H107A8 8 0 0 1 107 28H102Z"/>
+    <path d="M122 12V23A5 5 0 0 0 132 23V12"/>
+    <path d="M139 28V12H145A4 4 0 0 1 145 20H139M143 20L149 28"/>
+    <path d="M155 28L161 12L167 28M157.5 22H164.5"/>
+  </g>
+  <g fill="none" stroke="#4C6650" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 42L53 35L56 42M51.1 39.6H54.9"/>
+    <path d="M62 42V35H65A1.6 1.6 0 0 1 65 38.2H62M64.2 38.2L66 42"/>
+    <path d="M77 35.8A3.4 3.5 0 1 0 77 41.2"/>
+    <path d="M84 35V42M88.6 35V42M84 38.5H88.6"/>
+    <path d="M96 35V42"/>
+    <path d="M102 35H107M104.5 35V42"/>
+    <path d="M118 35H114V42H118M114 38.5H117"/>
+    <path d="M129 35.8A3.4 3.5 0 1 0 129 41.2"/>
+    <path d="M135 35H140M137.5 35V42"/>
+    <path d="M151 35.6Q151 35 150 35H148Q147 35 147 36.6Q147 38.4 149 38.4Q151 38.4 151 40.2Q151 42 150 42H148Q147 42 147 41.4"/>
+  </g>
+</svg>

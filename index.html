@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VERDURA ARCHITECTS — Designing a Sustainable Tomorrow</title>
+<meta name="description" content="VERDURA ARCHITECTS draws every building four times: sketch, material, form and environment. Step through the Hollowbrook Library case study and toggle its sun, wind, water and planting layers.">
+<meta name="theme-color" content="#ECE7DE">
+<link rel="canonical" href="https://verdura-architects.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VERDURA ARCHITECTS">
+<meta property="og:title" content="VERDURA ARCHITECTS — Designing a Sustainable Tomorrow">
+<meta property="og:description" content="An interactive drawing board: watch a library drawn from first sketch to the sun, wind and rain that shaped it.">
+<meta property="og:url" content="https://verdura-architects.vercel.app/">
+<meta property="og:image" content="https://verdura-architects.vercel.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VERDURA ARCHITECTS — Designing a Sustainable Tomorrow">
+<meta name="twitter:description" content="Sketch, material, form, environment: an architecture studio's case study, drawn live.">
+<meta name="twitter:image" content="https://verdura-architects.vercel.app/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.verduraReady)document.documentElement.classList.remove('js');},3000);</script>
+<script type="module" src="main.js"></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <symbol id="mark" viewBox="0 0 172 40">
+      <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 33L21 21L39 29"/>
+        <path d="M21 35V15"/>
+        <path d="M3 35H39"/>
+      </g>
+      <path d="M21 15C21 9 25 5 31 4C31 10 27 14 21 15Z" fill="var(--mark-leaf, #8FA68A)"/>
+      <circle cx="9" cy="10" r="3.2" fill="none" stroke="var(--mark-sun, #9A6B43)" stroke-width="1.5"/>
+      <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 12L56 28L62 12"/>
+        <path d="M78 12H69V28H78M69 20H76"/>
+        <path d="M85 28V12H91A4 4 0 0 1 91 20H85M89 20L95 28"/>
+        <path d="M102 12H107A8 8 0 0 1 107 28H102Z"/>
+        <path d="M122 12V23A5 5 0 0 0 132 23V12"/>
+        <path d="M139 28V12H145A4 4 0 0 1 145 20H139M143 20L149 28"/>
+        <path d="M155 28L161 12L167 28M157.5 22H164.5"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="VERDURA ARCHITECTS, back to the top">
+    <svg class="brand__logo" viewBox="0 0 172 40" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
+    <span class="brand__sub" aria-hidden="true">Architects</span>
+  </a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-btn__icon" aria-hidden="true"></span><span>Index</span></button>
+  <nav id="site-nav" class="site-nav" aria-label="Main">
+    <ol>
+      <li><a href="#case">Case study</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#contact" class="site-nav__cta">Start a project</a></li>
+    </ol>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- Case study / drawing board -->
+  <section id="case" class="hero" aria-labelledby="hero-title">
+    <div class="hero__rail">
+      <p class="eyebrow">Case study <span aria-hidden="true">·</span> Hollowbrook Library</p>
+      <h1 id="hero-title" class="hero__title">Designing a sustainable tomorrow</h1>
+      <p class="hero__lede">We draw every building four times before it is built: as a sketch, in its materials, as a precise form, and against the sun, wind and rain of its site. Step through one of ours.</p>
+
+      <ol id="stepper" class="stepper" aria-label="Drawing stages">
+        <li><button type="button" data-stage="1" aria-pressed="false"><span class="stepper__no">01</span><span class="stepper__name">Sketch</span><span class="stepper__txt">The idea, while it is still loose.</span></button></li>
+        <li><button type="button" data-stage="2" aria-pressed="false"><span class="stepper__no">02</span><span class="stepper__name">Material</span><span class="stepper__txt">Earth, timber, glass and soil.</span></button></li>
+        <li><button type="button" data-stage="3" aria-pressed="false"><span class="stepper__no">03</span><span class="stepper__name">Form</span><span class="stepper__txt">The section, drawn to build.</span></button></li>
+        <li><button type="button" data-stage="4" aria-pressed="false"><span class="stepper__no">04</span><span class="stepper__name">Environment</span><span class="stepper__txt">What the site asks of it.</span></button></li>
+      </ol>
+
+      <div class="env">
+        <p class="env__label" id="layers-label">Environmental layers</p>
+        <div id="layers" class="layers" role="group" aria-labelledby="layers-label">
+          <button type="button" data-layer="sun" aria-pressed="false"><span class="sw sw--sun" aria-hidden="true"></span>Sun</button>
+          <button type="button" data-layer="wind" aria-pressed="false"><span class="sw sw--wind" aria-hidden="true"></span>Wind</button>
+          <button type="button" data-layer="water" aria-pressed="false"><span class="sw sw--water" aria-hidden="true"></span>Water</button>
+          <button type="button" data-layer="plant" aria-pressed="false"><span class="sw sw--plant" aria-hidden="true"></span>Planting</button>
+        </div>
+        <fieldset id="seasons" class="seasons">
+          <legend>Sun at noon</legend>
+          <label><input type="radio" name="season" value="winter" checked><span>Midwinter</span></label>
+          <label><input type="radio" name="season" value="equinox"><span>Equinox</span></label>
+          <label><input type="radio" name="season" value="summer"><span>Midsummer</span></label>
+        </fieldset>
+        <p id="sun-read" class="sun-read" aria-live="polite"></p>
+      </div>
+      <button id="replay" class="replay" type="button"><span class="replay__icon" aria-hidden="true"></span>Replay the drawing</button>
+    </div>
+
+    <figure class="board" data-stage="0">
+      <div class="board__sheet">
+        <div id="board" class="board__draw"><noscript><p class="noscript">The interactive section drawing needs JavaScript. The project notes below describe each layer.</p></noscript></div>
+        <ul class="board__legend" data-min-stage="2" aria-label="Material key">
+          <li><span class="mk mk--earth" aria-hidden="true"></span>Rammed earth</li>
+          <li><span class="mk mk--timber" aria-hidden="true"></span>Cross-laminated timber</li>
+          <li><span class="mk mk--soil" aria-hidden="true"></span>Planted roof</li>
+          <li><span class="mk mk--concrete" aria-hidden="true"></span>Lime concrete</li>
+          <li><span class="mk mk--glass" aria-hidden="true"></span>Glazing</li>
+        </ul>
+      </div>
+      <figcaption class="board__foot">
+        <ol id="board-notes" class="notes is-empty" aria-label="Drawing notes">
+          <li data-note="sun" hidden><span class="notes__k">Sun</span>The eave is drawn to keep high summer sun off the glass and to let low winter sun reach the back of the reading room.</li>
+          <li data-note="wind" hidden><span class="notes__k">Wind</span>Low vents on the south face draw in air; warm air rises through the double-height room and leaves through the north clerestory.</li>
+          <li data-note="water" hidden><span class="notes__k">Water</span>Rain from the south roof runs to one gutter and a cistern under the terrace. Overflow feeds a planted swale.</li>
+          <li data-note="plant" hidden><span class="notes__k">Planting</span>A sedum roof over the north wing; a deciduous tree to the south, in leaf in summer and bare in winter.</li>
+          <li class="notes__empty">Choose an environmental layer to read the drawing's notes.</li>
+        </ol>
+        <dl class="tblock">
+          <div class="tblock__wide"><dt>Project</dt><dd>Hollowbrook Library</dd></div>
+          <div><dt>Drawing</dt><dd id="tb-drawing">Concept sketch</dd></div>
+          <div><dt>Stage</dt><dd id="tb-stage">01 of 04 · Sketch</dd></div>
+          <div><dt>Sun</dt><dd id="tb-season">—</dd></div>
+          <div><dt>Sheet</dt><dd>VA-HB-201</dd></div>
+          <div class="tblock__wide tblock__note"><dt>Note</dt><dd>Illustrative drawing, not to scale. No performance figures are implied.</dd></div>
+        </dl>
+      </figcaption>
+    </figure>
+    <p id="board-status" class="visually-hidden" aria-live="polite"></p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects" aria-labelledby="projects-title">
+    <header class="sec-head" data-draft>
+      <p class="sec-no">Projects</p>
+      <h2 id="projects-title">Eight buildings, each drawn from what was already there</h2>
+      <p class="sec-lede">Libraries, homes, workshops and shelters. Filter by what they are for or what they are made of, and open any sheet for its notes.</p>
+    </header>
+    <form id="proj-filters" class="pfilters" aria-label="Filter projects">
+      <fieldset class="chips">
+        <legend>Typology</legend>
+        <label><input type="radio" name="type" value="all" checked><span>All</span></label>
+        <label><input type="radio" name="type" value="civic"><span>Civic</span></label>
+        <label><input type="radio" name="type" value="housing"><span>Housing</span></label>
+        <label><input type="radio" name="type" value="workplace"><span>Workplace</span></label>
+        <label><input type="radio" name="type" value="landscape"><span>Landscape</span></label>
+      </fieldset>
+      <fieldset class="chips">
+        <legend>Material</legend>
+        <label><input type="radio" name="mat" value="all" checked><span>All</span></label>
+        <label><input type="radio" name="mat" value="timber"><span>Timber</span></label>
+        <label><input type="radio" name="mat" value="earth"><span>Earth</span></label>
+        <label><input type="radio" name="mat" value="brick"><span>Reused brick</span></label>
+        <label><input type="radio" name="mat" value="straw"><span>Straw</span></label>
+        <label><input type="radio" name="mat" value="stone"><span>Stone</span></label>
+      </fieldset>
+      <p id="proj-count" class="pfilters__count" aria-live="polite"></p>
+    </form>
+    <ul id="proj-grid" class="proj-grid"></ul>
+    <p class="fine">All projects, places and people on this site are fictional.</p>
+  </section>
+
+  <dialog id="proj-dialog" class="dlg" aria-labelledby="dlg-title">
+    <div class="dlg__inner">
+      <div class="dlg__bar">
+        <p id="dlg-no" class="dlg__no">Project 01</p>
+        <div class="dlg__nav">
+          <button id="dlg-prev" type="button" class="ctrl"><span aria-hidden="true">←</span><span class="visually-hidden">Previous project</span></button>
+          <button id="dlg-next" type="button" class="ctrl"><span aria-hidden="true">→</span><span class="visually-hidden">Next project</span></button>
+          <button id="dlg-close" type="button" class="ctrl ctrl--close"><span aria-hidden="true">×</span><span class="visually-hidden">Close project</span></button>
+        </div>
+      </div>
+      <div id="dlg-art" class="dlg__art"></div>
+      <div class="dlg__body">
+        <h2 id="dlg-title" class="dlg__title">Hollowbrook Library</h2>
+        <p id="dlg-text" class="dlg__text"></p>
+        <dl class="dlg__facts">
+          <div><dt>Typology</dt><dd id="dlg-type"></dd></div>
+          <div><dt>Material</dt><dd id="dlg-mat"></dd></div>
+          <div><dt>Year</dt><dd id="dlg-year"></dd></div>
+          <div><dt>Status</dt><dd id="dlg-status"></dd></div>
+          <div><dt>Place</dt><dd id="dlg-place"></dd></div>
+        </dl>
+        <div class="dlg__palette"><p class="dlg__k">Material palette</p><ul id="dlg-palette"></ul></div>
+        <a id="dlg-enquire" class="btn btn--line" href="#contact">Discuss a similar project</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Process -->
+  <section id="process" class="process" aria-labelledby="process-title">
+    <header class="sec-head sec-head--split" data-draft>
+      <div>
+        <p class="sec-no">Process</p>
+        <h2 id="process-title">From the drawing board</h2>
+      </div>
+      <p class="sec-lede">Five sheets from the Hollowbrook file. We keep every one: the studies that were abandoned explain the building as much as the ones that were built.</p>
+    </header>
+    <div class="proc-grid">
+      <figure class="proc proc--a" data-process="site"><div class="proc__art"></div><figcaption><span class="proc__no">P1</span><span class="proc__t">Site study</span><span class="proc__d">Contours, the sun's path and the prevailing wind, before any building.</span></figcaption></figure>
+      <figure class="proc proc--b" data-process="massing"><div class="proc__art"></div><figcaption><span class="proc__no">P2</span><span class="proc__t">Three massing options</span><span class="proc__d">A, B and C. Option B was cut into the slope and kept.</span></figcaption></figure>
+      <figure class="proc proc--c" data-process="joint"><div class="proc__art"></div><figcaption><span class="proc__no">P3</span><span class="proc__t">Timber joint, 1:5</span><span class="proc__d">A pegged, housed tenon that can be taken apart and reused.</span></figcaption></figure>
+      <figure class="proc proc--d" data-process="wall"><div class="proc__art"></div><figcaption><span class="proc__no">P4</span><span class="proc__t">North wall build-up, 1:10</span><span class="proc__d">Earth, wood fibre and lime: every layer can breathe.</span></figcaption></figure>
+      <figure class="proc proc--e" data-process="planting"><div class="proc__art"></div><figcaption><span class="proc__no">P5</span><span class="proc__t">Planting plan</span><span class="proc__d">Existing trees kept and drawn first; the swale follows the fall of the land.</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Studio -->
+  <section id="studio" class="studio" aria-labelledby="studio-title">
+    <div class="studio__intro" data-draft>
+      <p class="sec-no">Studio</p>
+      <h2 id="studio-title">A small studio in an old ropeworks</h2>
+      <p class="sec-lede">VERDURA is a practice of architects, a model maker and a landscape designer working from a restored ropeworks by the harbour. We take on a few projects at a time and stay with each one until it is built.</p>
+    </div>
+    <ul class="principles">
+      <li class="principle">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="d" pathLength="1" d="M8 52H56M14 52V30L32 16L50 30V52M26 52V38H38V52"/></svg>
+        <h3>Build less</h3><p>The first question on every project is whether the building already exists and only needs mending.</p>
+      </li>
+      <li class="principle">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="d" pathLength="1" d="M32 56V22M32 34C22 34 16 28 16 18C26 18 32 24 32 34ZM32 28C40 28 46 22 46 12C36 12 32 18 32 28Z"/></svg>
+        <h3>Build with what grows</h3><p>Timber, straw and earth from as close to the site as we can find them.</p>
+      </li>
+      <li class="principle">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="d" pathLength="1" d="M12 40L28 24M24 20L32 12L44 24L36 32M36 32L52 48L44 56L28 40M20 44L12 52"/></svg>
+        <h3>Design for repair</h3><p>Pegged joints, screwed fixings and exposed services, so the next person can take it apart.</p>
+      </li>
+      <li class="principle">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="d" pathLength="1" d="M6 46C16 40 22 44 32 38S48 30 58 34M6 54C16 48 22 52 32 46S48 38 58 42M44 18m-8 0a8 8 0 1 0 16 0a8 8 0 1 0 -16 0"/></svg>
+        <h3>Let the site lead</h3><p>We walk it at different hours and seasons before drawing a single line of the plan.</p>
+      </li>
+    </ul>
+    <div class="story">
+      <p class="story__k" id="ruler-label">The studio, on a scale rule</p>
+      <div class="ruler-wrap">
+        <div id="ruler" class="ruler" role="group" aria-labelledby="ruler-label"></div>
+        <span id="ruler-cursor" class="ruler__cursor" aria-hidden="true"></span>
+      </div>
+      <div id="ev-panel" class="ev" aria-live="polite">
+        <p id="ev-year" class="ev__year">2024</p>
+        <div><h3 id="ev-title" class="ev__title"></h3><p id="ev-text" class="ev__text"></p></div>
+        <div class="ev__nav">
+          <button id="ev-prev" type="button" class="ctrl"><span aria-hidden="true">←</span><span class="visually-hidden">Earlier</span></button>
+          <button id="ev-next" type="button" class="ctrl"><span aria-hidden="true">→</span><span class="visually-hidden">Later</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="contact__intro" data-draft>
+      <p class="sec-no">Start a project</p>
+      <h2 id="contact-title">Tell us about the site</h2>
+      <p class="sec-lede">The best first message is a few lines about the place: what is there now, what you would like to happen, and what you would rather keep. We reply with questions before we reply with drawings.</p>
+      <address class="contact__addr"><span>The Ropeworks Studio</span><span>Harbour Road</span><span>Visits by appointment</span></address>
+    </div>
+    <div class="contact__panel">
+      <form id="contact-form" class="form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-name">Your name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" aria-describedby="cerr-name" required>
+            <p id="cerr-name" class="field__err"></p>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" aria-describedby="cerr-email" required>
+            <p id="cerr-email" class="field__err"></p>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-org">Organisation <span class="field__opt">(optional)</span></label>
+            <input id="c-org" name="org" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="c-type">Kind of project</label>
+            <select id="c-type" name="type" aria-describedby="cerr-type" required>
+              <option value="">Choose one</option>
+              <option value="home">A home</option>
+              <option value="housing">Housing</option>
+              <option value="civic">A school, library or civic building</option>
+              <option value="workplace">A workplace</option>
+              <option value="landscape">A landscape or shelter</option>
+              <option value="adapt">Adapting an existing building</option>
+            </select>
+            <p id="cerr-type" class="field__err"></p>
+          </div>
+        </div>
+        <fieldset class="field chips">
+          <legend>The site</legend>
+          <label><input type="radio" name="site" value="have" checked><span>We have a site</span></label>
+          <label><input type="radio" name="site" value="looking"><span>Still looking</span></label>
+          <label><input type="radio" name="site" value="existing"><span>An existing building</span></label>
+        </fieldset>
+        <div class="field">
+          <label for="c-msg">About the place</label>
+          <textarea id="c-msg" name="message" rows="4" aria-describedby="cerr-message" required></textarea>
+          <p id="cerr-message" class="field__err"></p>
+        </div>
+        <div class="field">
+          <label class="check"><input type="checkbox" name="consent" aria-describedby="cerr-consent"><span class="check__ui" aria-hidden="true"></span><span>I understand this is a portfolio demo and nothing will be sent.</span></label>
+          <p id="cerr-consent" class="field__err"></p>
+        </div>
+        <button class="btn btn--solid" type="submit">Send to the studio</button>
+        <p id="c-status" class="form__status" aria-live="polite"></p>
+      </form>
+      <div id="contact-done" class="done" tabindex="-1" hidden>
+        <svg class="done__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 56V22M32 34C22 34 16 28 16 18C26 18 32 24 32 34ZM32 28C40 28 46 22 46 12C36 12 32 18 32 28Z"/></svg>
+        <h3>Thank you, <span id="cdone-name"></span>.</h3>
+        <p>This is a portfolio demo, so your message has not been sent anywhere and nothing has been stored. In a live studio site, one of the architects would write back with a few questions about the site.</p>
+        <button id="c-again" class="btn btn--line" type="button">Write another message</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <svg class="footer__logo" viewBox="0 0 172 40" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
+      <p class="footer__line">Designing a sustainable tomorrow.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="#case">Case study</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#contact">Start a project</a></li>
+      </ul>
+    </nav>
+    <div class="credit">
+      <p class="credit__k">Title block</p>
+      <p class="credit__by">Designed &amp; built by <a href="https://www.linkedin.com/in/saadbashirmarketing/" target="_blank" rel="noopener" aria-label="Saad Bashir on LinkedIn (opens in a new tab)">Saad Bashir</a></p>
+      <p class="credit__note">Fictional concept brand — portfolio project.</p>
+      <a class="credit__more" href="https://saadbashirportfolio.vercel.app/websites.html">More work <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <p class="footer__fine">VERDURA ARCHITECTS is fictional. Drawings are illustrative and imply no performance figures. © <span id="year">2026</span></p>
+</footer>
+</body>
+</html>
